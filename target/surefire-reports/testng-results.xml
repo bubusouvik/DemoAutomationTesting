@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-29T17:09:24 IST" name="Surefire suite" finished-at="2025-09-29T17:10:05 IST" duration-ms="41804">
+    <groups>
+    </groups>
+    <test started-at="2025-09-29T17:09:24 IST" name="Surefire test" finished-at="2025-09-29T17:10:05 IST" duration-ms="41804">
+      <class name="com.automationtesting.test.FrameTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.automationtesting.test.FrameTest@48e4374]" started-at="2025-09-29T17:09:49 IST" name="launchBrowser" finished-at="2025-09-29T17:09:54 IST" duration-ms="4967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="TestinFrame()[pri:0, instance:com.automationtesting.test.FrameTest@48e4374]" started-at="2025-09-29T17:09:54 IST" name="TestinFrame" finished-at="2025-09-29T17:09:54 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestinFrame -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationtesting.test.FrameTest@48e4374]" started-at="2025-09-29T17:09:54 IST" name="closeBrowser" finished-at="2025-09-29T17:09:55 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationtesting.test.FrameTest -->
+      <class name="com.automationtesting.test.DatepickerTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.automationtesting.test.DatepickerTest@35047d03]" started-at="2025-09-29T17:09:24 IST" name="launchBrowser" finished-at="2025-09-29T17:09:30 IST" duration-ms="5879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="chooseDatePicker()[pri:0, instance:com.automationtesting.test.DatepickerTest@35047d03]" started-at="2025-09-29T17:09:30 IST" name="chooseDatePicker" finished-at="2025-09-29T17:09:49 IST" duration-ms="19542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseDatePicker -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationtesting.test.DatepickerTest@35047d03]" started-at="2025-09-29T17:09:49 IST" name="closeBrowser" finished-at="2025-09-29T17:09:49 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationtesting.test.DatepickerTest -->
+      <class name="com.automationtesting.test.getUrlandTitleTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.automationtesting.test.getUrlandTitleTest@3d680b5a]" started-at="2025-09-29T17:09:55 IST" name="launchBrowser" finished-at="2025-09-29T17:09:59 IST" duration-ms="4000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="getURLandTitleFromChildPage()[pri:0, instance:com.automationtesting.test.getUrlandTitleTest@3d680b5a]" started-at="2025-09-29T17:09:59 IST" name="getURLandTitleFromChildPage" finished-at="2025-09-29T17:10:05 IST" duration-ms="6504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURLandTitleFromChildPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationtesting.test.getUrlandTitleTest@3d680b5a]" started-at="2025-09-29T17:10:05 IST" name="closeBrowser" finished-at="2025-09-29T17:10:05 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationtesting.test.getUrlandTitleTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
