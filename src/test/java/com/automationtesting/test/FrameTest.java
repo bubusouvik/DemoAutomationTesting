@@ -1,7 +1,4 @@
-/**
- * Author: Souvik Guria
- * Description: verifies frames and send the values inside nested frames.
- */
+
 package com.automationtesting.test;
 
 import java.io.IOException;
@@ -14,6 +11,10 @@ import com.objectresourceutility.HomePage;
 
 public class FrameTest extends BaseclassForAT {
 
+	/**
+	 * Author: Souvik Guria
+	 * Description: verifies frames and send the values inside nested frames.
+	 */
 	@Test
 	public void TestinFrame() throws IOException {
 

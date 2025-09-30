@@ -1,7 +1,4 @@
-/**
- * Author: Souvik Guria
- * Description: Get the data from property files.
- */
+
 package com.at.genericUtility;
 
 import java.io.FileInputStream;
@@ -10,6 +7,10 @@ import java.util.Properties;
 
 public class FileUtility {
 
+	/**
+	 * Author: Souvik Guria 
+	 * Description: Get the data from property files.
+	 */
 	// common data
 	public String getDataFromPropertyFile(String key) throws IOException {
 		FileInputStream file = new FileInputStream("./testdata/testdata.properties");
@@ -19,9 +20,26 @@ public class FileUtility {
 		return data;
 	}
 
+	/**
+	 * Author: Souvik Guria 
+	 * Description: Get the data from property files.
+	 */
 	// get the dates
 	public String getDateFromPropertyFile(String key) throws IOException {
 		FileInputStream file = new FileInputStream("./testdata/dates.properties");
+		Properties prop = new Properties();
+		prop.load(file);
+		String data = prop.getProperty(key);
+		return data;
+	}
+
+	/**
+	 * Author: Souvik Guria 
+	 * Description: Get the data from property files.
+	 */
+	// get Title and URL from property file
+	public String getTitleAndURLFromPropertyFile(String key) throws IOException {
+		FileInputStream file = new FileInputStream("./testdata/titleAndurl.properties");
 		Properties prop = new Properties();
 		prop.load(file);
 		String data = prop.getProperty(key);

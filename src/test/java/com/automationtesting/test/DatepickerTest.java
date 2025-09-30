@@ -1,7 +1,4 @@
-/**
- * Author: Souvik Guria
- * Description: Choose DatePicker for disabled start date and enabled end date.
- */
+
 package com.automationtesting.test;
 
 import java.io.IOException;
@@ -15,6 +12,12 @@ import com.at.webutility.WebDriverUtilityForAT;
 import com.objectresourceutility.HomePage;
 
 public class DatepickerTest extends BaseclassForAT {
+
+	/**
+	 * Author: Souvik Guria Description: Choose DatePicker for disabled start date
+	 * and enabled end date.
+	 */
+
 	@Test
 	public void chooseDatePicker() throws IOException {
 
@@ -29,8 +32,8 @@ public class DatepickerTest extends BaseclassForAT {
 		// get the date from property file
 		String startMonth = file.getDateFromPropertyFile("startMonth");
 		String endMonth = file.getDateFromPropertyFile("endMonth");
-		String startdate = file.getDateFromPropertyFile("startdate");
-		String enddate = file.getDateFromPropertyFile("enddate");
+		String startdate = file.getDateFromPropertyFile("startDate");
+		String enddate = file.getDateFromPropertyFile("endDate");
 
 		// check the dates according to property file
 		for (;;) {
