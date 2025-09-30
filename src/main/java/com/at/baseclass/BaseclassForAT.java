@@ -26,12 +26,11 @@ public class BaseclassForAT {
 
 	public static WebDriver edriver = null;
 
-	@BeforeClass
 	@Parameters("Browser")
+	@BeforeClass
 	public void launchBrowser(@Optional("chrome") String Browser) throws IOException {
 
-//		String browser = fileutility.getDataFromPropertyFile("browser");
-
+		// get the URL from property file
 		String url = fileutility.getDataFromPropertyFile("url");
 
 		if (Browser.equals("chrome")) {
@@ -50,6 +49,11 @@ public class BaseclassForAT {
 
 	@AfterClass
 	public void closeBrowser() throws InterruptedException {
+		try {
+			new WebDriverWait(driver, Duration.ofSeconds(3)).until(d -> false);
+		} catch (Exception e) {
+			System.out.println("Takes time for 5 sec to close the browser");
+		}
 		driver.quit();
 	}
 

@@ -37,6 +37,12 @@ public class HomePage {
 	@FindBy(xpath = "//select[@title='Change the month']")
 	private WebElement changeTheMonth;
 
+	@FindBy(xpath = "//input[@type='text']")
+	private WebElement input;
+
+	@FindBy(xpath = "//iframe[@src='MultipleFrames.html']")
+	private WebElement framesSrc;
+
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -79,5 +85,13 @@ public class HomePage {
 
 	public WebElement getChooseIframe() {
 		return chooseiframe;
+	}
+
+	public WebElement getInput() {
+		return input;
+	}
+
+	public WebElement getFramesrc() {
+		return framesSrc;
 	}
 }

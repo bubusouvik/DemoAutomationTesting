@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationtesting.test.FrameTest">
+      <class name="com.automationtesting.test.DatepickerTest">
         <methods>
-          <include name="TestinFrame"/>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
+          <include name="chooseDatePicker"/>
         </methods>
-      </class> <!-- com.automationtesting.test.FrameTest -->
+      </class> <!-- com.automationtesting.test.DatepickerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

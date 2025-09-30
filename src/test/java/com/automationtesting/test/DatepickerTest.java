@@ -1,28 +1,38 @@
+/**
+ * Author: Souvik Guria
+ * Description: Choose DatePicker for disabled start date and enabled end date.
+ */
 package com.automationtesting.test;
+
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.at.baseclass.BaseclassForAT;
+import com.at.genericUtility.FileUtility;
 import com.at.webutility.WebDriverUtilityForAT;
 import com.objectresourceutility.HomePage;
 
-
 public class DatepickerTest extends BaseclassForAT {
-
 	@Test
-	public void chooseDatePicker() {
+	public void chooseDatePicker() throws IOException {
 
 		HomePage home = new HomePage(driver);
 		WebDriverUtilityForAT webutility = new WebDriverUtilityForAT();
+		FileUtility file = new FileUtility();
 
 		webutility.MoveToElementUsingMouse(driver, home.getWidgets());
 		home.getDatePicker().click();
 		home.getDisbaledDatepicker().click();
-		String startMonth = "October";
-		String endMonth = "Dec";
-		String startdate = "10";
-		String enddate = "16";
+
+		// get the date from property file
+		String startMonth = file.getDateFromPropertyFile("startMonth");
+		String endMonth = file.getDateFromPropertyFile("endMonth");
+		String startdate = file.getDateFromPropertyFile("startdate");
+		String enddate = file.getDateFromPropertyFile("enddate");
+
+		// check the dates according to property file
 		for (;;) {
 			try {
 				driver.findElement(By.xpath("//span[text()='" + startMonth

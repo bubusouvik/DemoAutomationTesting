@@ -40,6 +40,14 @@ public class WebDriverUtilityForAT {
 
 	}
 
+	public void switchToFrameByIdnex(WebDriver driver, int index) {
+		driver.switchTo().frame(index);
+	}
+
+	public void switchToFrameByElement(WebDriver driver, WebElement ele) {
+		driver.switchTo().frame(ele);
+	}
+
 	public void dropdownElement(WebElement ele, String value) {
 		Select dropdown = new Select(ele);
 		dropdown.selectByValue(value);
